@@ -54,10 +54,10 @@
   vars:
     packages:
       - virtualbox
+      - virtualbox-host-modules-arch
       - libvirt
       - qemu
       - virt-manager
-      - ebtables
       - dnsmasq
       - bridge-utils
 
