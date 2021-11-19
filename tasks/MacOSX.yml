@@ -27,17 +27,17 @@
 # limitations under the License.
 ---
 - name: HomeBrew | Install Virtualbox
-  homebrew_cask:
+  community.general.homebrew_cask:
     name: virtualbox
     state: present
 
 - name: HomeBrew | Install Vagrant
-  homebrew_cask:
+  community.general.homebrew_cask:
     name: vagrant
     state: present
 
 - name: HomeBrew | Install Docker tools
-  homebrew_cask:
+  community.general.homebrew_cask:
     name: "{{ packages }}"
     state: present
   vars:
@@ -45,6 +45,6 @@
       - dockertoolbox
 
 - name: HomeBrew | Install QEmu
-  homebrew:
+  community.general.homebrew:
     name: qemu
     state: present
